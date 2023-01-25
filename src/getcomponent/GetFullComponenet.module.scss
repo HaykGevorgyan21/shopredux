@@ -1,0 +1,67 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.image_background {
+  background-color: #f6f7f9;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.image {
+  width: 150px;
+  height: 150px;
+  margin-bottom: 20px;
+}
+.container {
+  background-color: white;
+  width: 320px;
+  height: 400px;
+  margin: 50px 50px 30px 50px;
+  align-items: center;
+  text-align: center;
+}
+.category {
+  display: block;
+  font-size: 25px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #212121;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+.price {
+  border: 1px solid #0a89ff;
+  border-radius: 8px;
+  width: 80%;
+  height: 32px;
+  margin: auto;
+  font-size: 17px;
+  font-weight: bold;
+  margin-top: 20px;
+  color: #212121;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+.add-card {
+  border: none;
+  outline: none;
+  background-color: #0a89ff;
+  border-radius: 8px;
+  width: 80%;
+  height: 32px;
+  margin: auto;
+  font-size: 14px;
+  font-weight: bold;
+  margin-top: 20px;
+  color: white;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+.add-card:hover {
+  background-color: #5c9dda;
+}

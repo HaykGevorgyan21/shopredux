@@ -1,23 +1,26 @@
-import logo from './logo.svg';
 import './App.css';
-
+import GetFullProduct from './getcomponent/GetFullComponent';
+import { Route, Routes, Navigate } from "react-router-dom";
+import Navbar from './Navbar/Navbar';
+import {Electronics} from './electronics/Electronics';
+import Jewelery from './Jewelery/Jewelery';
+import Men from './men/men';
+import Women from './women/Women';
+import {Basket} from './basket/Basket';
 function App() {
+
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+        <Navbar />
+      <Routes>
+        <Route path='/' element={<GetFullProduct />} />
+        <Route path='/Electronics' element={<Electronics />} />
+        <Route path='Jewelery' element={<Jewelery />} />
+        <Route  path='Men' element={<Men />}/>
+        <Route path='Women' element={<Women />} />
+        <Route path='Basket' element={<Basket />} />
+ </Routes>
     </div>
   );
 }
